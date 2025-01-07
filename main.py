@@ -11,7 +11,6 @@ def generate_d1(num_points, x_range=(-10, 10), y_range=(-10, 10), angle1=np.pi/4
     X, Y = X.flatten(), Y.flatten()
 
     theta = np.arctan2(Y, X)
-
     theta = np.mod(theta, 2 * np.pi)
     angle1 = np.mod(angle1, 2 * np.pi)
     angle2 = np.mod(angle2, 2 * np.pi)
